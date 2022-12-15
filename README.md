@@ -80,6 +80,64 @@ logout
 
 ```
 ssh bandit5@bandit.labs.overthewire.org -p 2220
+ls
+cd inhere
+find -size 1033c ! -executable
+find -type f -size 1033c ! -executable -exec file {} + 
+cd maybehere07
+ls -a
+cat \.file2
+logout
+```
+
+> ### Key : P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+
+
+## [Bandit Level 6 -> 7](https://overthewire.org/wargames/bandit/bandit7.html)
+
+```
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+ls
+cd /
+find -size 33c -user bandit7 -group bandit6
+cat /var/lib/dpkg/info/bandit7\.password
+logout
+```
+
+> ### Key : z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+
+## [Bandit Level 7 -> 8](https://overthewire.org/wargames/bandit/bandit8.html)
+
+```
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+ls
+cat data.txt
+grep -i millionth data.txt
+logout
+```
+
+> ### Key : TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+
+
+## [Bandit Level 8 -> 9](https://overthewire.org/wargames/bandit/bandit9.html)
+
+```
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+ls
+sort data.txt | uniq -u
+logout
+```
+
+> ### Key : EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+
+
+## [Bandit Level 9 -> 10](https://overthewire.org/wargames/bandit/bandit10.html)
+
+```
+ssh bandit9@bandit.labs.overthewire.org -p 2220
+ls
 
 logout
 ```
+
+> ### Key :
