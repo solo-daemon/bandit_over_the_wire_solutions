@@ -136,8 +136,68 @@ logout
 ```
 ssh bandit9@bandit.labs.overthewire.org -p 2220
 ls
-
+strings data.txt | grep ==
 logout
 ```
 
-> ### Key :
+> ### Key : G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+
+
+## [Bandit Level 10 -> 11](https://overthewire.org/wargames/bandit/bandit11.html)
+
+```
+ssh bandit10@bandit.labs.overthewire.org -p 2220
+ls
+base64 -d data.txt
+logout
+```
+
+> ### Key : 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+
+
+## [Bandit Level 11 -> 12](https://overthewire.org/wargames/bandit/bandit12.html)
+
+```
+ssh bandit11@bandit.labs.overthewire.org -p 2220
+ls
+cat data.txt | tr [N-ZA-M] [A-Z] | tr [a-z] [n-za-m]
+logout
+```
+
+> ### Key : JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+
+
+### [Bandit Level 12 -> 13](https://overthewire.org/wargames/bandit/bandit13.html)
+
+```
+ssh bandit12@bandit.labs.overthewire.org -p 2220
+ls
+file data.txt
+mkdir /tmp/[your_name]
+cp data.txt /tmp/[your_name]/data.txt
+cd /tmp/amrit
+xxd -r data.txt | mv new
+mv new new.gz
+gzip -d new.gz
+file new
+bzip2 -d new
+file new.out
+mv new.out new.gz
+gzip -d new.gz
+file new
+mv new new.tar
+tar xvf new.tar
+file data5.bin
+tar xvf data5.bin
+file data6.bin
+mv data6.bin data6.bz2
+bzip2 -d data6.bz2
+tar xvf data6
+file data8.bin
+mv data8.bin data8.gz
+file data8
+cat data8
+logout
+```
+
+> ### Key : wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
