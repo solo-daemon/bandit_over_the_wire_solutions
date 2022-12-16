@@ -167,7 +167,7 @@ logout
 > ### Key : JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
 
-### [Bandit Level 12 -> 13](https://overthewire.org/wargames/bandit/bandit13.html)
+## [Bandit Level 12 -> 13](https://overthewire.org/wargames/bandit/bandit13.html)
 
 ```
 ssh bandit12@bandit.labs.overthewire.org -p 2220
@@ -201,3 +201,39 @@ logout
 ```
 
 > ### Key : wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+
+
+## [Bandit Level 13 -> 14](https://overthewire.org/wargames/bandit/bandit14.html)
+
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+ls
+ssh -i sshkey.private bandit14@bandit.labs.overthewire.org
+cat /etc/bandit_pass/bandit14
+logout
+```
+
+> ### Key : fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+
+
+## [Bandit Level 14 -> 15](https://overthewire.org/wargames/bandit/bandit15.html)
+
+```
+ssh bandit14@bandit.labs.overthewire.org -p 2220
+cat /etc/bandit_pass/bandit14 | nc localhost 30000
+logout
+```
+
+> ### Key : jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+
+
+## [Bandit Level 15 -> 16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+```
+ssh bandit15@bandit.labs.overthewire.org -p 2220
+openssl s_client -connect localhost:30001
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+logout
+```
+
+> ### Key : JQttfApK4SeyHwDlI9SXGR50qclOAil1
