@@ -237,3 +237,30 @@ logout
 ```
 
 > ### Key : JQttfApK4SeyHwDlI9SXGR50qclOAil1
+
+
+## [Bandit Level 16 -> 17](https://overthewire.org/wargames/bandit/bandit17.html)
+
+```
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+nmap -v -p 31000-32000 localhost
+openssl s_client localhost:31790
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
+logout
+```
+
+Copied the output manually to /Documents/rsa_key
+
+> ### Key : _ Check level)17_rsa_key _
+
+
+## [Bandit Level 17 -> 18](https://overthewire.org/wargames/bandit/bandit18.html)
+
+```
+sudo chmod 600 ~/Documents/rsa_key
+ssh -i ~/Documents/rsa_key bandit17@bandit.labs.overthewire.org -p 2220
+diff -a passwords.old passwords.new
+logout
+```
+
+> ### Key : hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
