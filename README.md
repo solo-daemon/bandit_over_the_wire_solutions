@@ -264,3 +264,33 @@ logout
 ```
 
 > ### Key : hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+
+## [Bandit Level 18 -> 19](https://overthewire.org/wargames/bandit/bandit19.html)
+
+```
+ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+```
+
+> ### Key : awhqfNnAbc1naukrpqDYcF95h7HoMTrC
+
+
+## [Bandit Level 19 -> 20](https://overthewire.org/wargames/bandit/bandit20.html)
+
+```
+ssh bandit19@bandit.labs.overthewire.org -p 2220
+ls
+./bandit20-do cat /etc/bandit_pass/bandit20
+logout
+```
+
+> ### Key : VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+
+## [Bandit Level 20 -> 21](https://overthewire.org/wargames/bandit/bandit21.html)
+
+```
+ssh bandit20@bandit.labs.overthewire.org -p 2220
+
+logout
+```
+
+### Key : 
