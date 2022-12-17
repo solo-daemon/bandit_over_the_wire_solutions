@@ -167,7 +167,7 @@ logout
 > ### Key : JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
 
-### [Bandit Level 12 -> 13](https://overthewire.org/wargames/bandit/bandit13.html)
+## [Bandit Level 12 -> 13](https://overthewire.org/wargames/bandit/bandit13.html)
 
 ```
 ssh bandit12@bandit.labs.overthewire.org -p 2220
@@ -201,3 +201,141 @@ logout
 ```
 
 > ### Key : wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+
+
+## [Bandit Level 13 -> 14](https://overthewire.org/wargames/bandit/bandit14.html)
+
+```
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+ls
+ssh -i sshkey.private bandit14@bandit.labs.overthewire.org
+cat /etc/bandit_pass/bandit14
+logout
+```
+
+> ### Key : fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+
+
+## [Bandit Level 14 -> 15](https://overthewire.org/wargames/bandit/bandit15.html)
+
+```
+ssh bandit14@bandit.labs.overthewire.org -p 2220
+cat /etc/bandit_pass/bandit14 | nc localhost 30000
+logout
+```
+
+> ### Key : jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+
+
+## [Bandit Level 15 -> 16](https://overthewire.org/wargames/bandit/bandit16.html)
+
+```
+ssh bandit15@bandit.labs.overthewire.org -p 2220
+openssl s_client -connect localhost:30001
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+logout
+```
+
+> ### Key : JQttfApK4SeyHwDlI9SXGR50qclOAil1
+
+
+## [Bandit Level 16 -> 17](https://overthewire.org/wargames/bandit/bandit17.html)
+
+```
+ssh bandit16@bandit.labs.overthewire.org -p 2220
+nmap -v -p 31000-32000 localhost
+openssl s_client localhost:31790
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
+logout
+```
+
+Copied the output manually to /Documents/rsa_key
+
+> ### Key : _ Check level)17_rsa_key _
+
+
+## [Bandit Level 17 -> 18](https://overthewire.org/wargames/bandit/bandit18.html)
+
+```
+sudo chmod 600 ~/Documents/rsa_key
+ssh -i ~/Documents/rsa_key bandit17@bandit.labs.overthewire.org -p 2220
+diff -a passwords.old passwords.new
+logout
+```
+
+> ### Key : hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+
+## [Bandit Level 18 -> 19](https://overthewire.org/wargames/bandit/bandit19.html)
+
+```
+ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+```
+
+> ### Key : awhqfNnAbc1naukrpqDYcF95h7HoMTrC
+
+
+## [Bandit Level 19 -> 20](https://overthewire.org/wargames/bandit/bandit20.html)
+
+```
+ssh bandit19@bandit.labs.overthewire.org -p 2220
+ls
+./bandit20-do cat /etc/bandit_pass/bandit20
+logout
+```
+
+> ### Key : VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+
+
+## [Bandit Level 20 -> 21](https://overthewire.org/wargames/bandit/bandit21.html)
+
+```
+ssh bandit20@bandit.labs.overthewire.org -p 2220
+tmux
+nc -Nl localhost 32001 < /etc/bandit_pass/bandit20
+Ctrl+b "
+./suconnect 32001
+logout
+```
+
+> ### Key : NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+
+
+## [Bandit Level 21 -> 22](https://overthewire.org/wargames/bandit/bandit22.html)
+
+```
+ssh bandit21@bandit.labs.overthewire.org -p 2220
+cd /etc/cron.d
+ls
+cat cronjob_bandit22
+cat /usr/bin/cronjob_bandit22.sh
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+logout
+```
+
+> ### Key : WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
+
+
+## [Bandit Level 22 -> 23](https://overthewire.org/wargames/bandit/bandit23.html)
+
+```
+ssh bandit22@bandit.labs.overthewire.org -p 2220
+cat /etc/cron.d/cronjob_bandit23
+cat /usr/bin/cronjob_bandit23.sh
+myname=bandit23
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+cat /tmp/$mytarget
+logout
+```
+
+> ### Key : QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
+
+
+## [Bandit Level 23 -> 24](https://overthewire.org/wargames/bandit/bandit24.html)
+
+```
+ssh bandit23@bandit.labs.overthewire.org -p 2220
+cat /usr/bin/cronjob_bandit24.sh
+logout
+```
+
+> ### Key : 
