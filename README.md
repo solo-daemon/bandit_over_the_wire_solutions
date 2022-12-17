@@ -298,3 +298,19 @@ logout
 ```
 
 > ### Key : NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+
+
+## [Bandit Level 21 -> 22](https://overthewire.org/wargames/bandit/bandit22.html)
+
+```
+ssh bandit21@bandit.labs.overthewire.org -p 2220
+cd /etc/cron.d
+ls
+cat cronjob_bandit22
+cat /usr/bin/cronjob_bandit22.sh
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+logout
+```
+
+> ### Key : WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
+
