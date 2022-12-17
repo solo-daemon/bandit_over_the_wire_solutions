@@ -314,3 +314,28 @@ logout
 
 > ### Key : WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
 
+
+## [Bandit Level 22 -> 23](https://overthewire.org/wargames/bandit/bandit23.html)
+
+```
+ssh bandit22@bandit.labs.overthewire.org -p 2220
+cat /etc/cron.d/cronjob_bandit23
+cat /usr/bin/cronjob_bandit23.sh
+myname=bandit23
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+cat /tmp/$mytarget
+logout
+```
+
+> ### Key : QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
+
+
+## [Bandit Level 23 -> 24](https://overthewire.org/wargames/bandit/bandit24.html)
+
+```
+ssh bandit23@bandit.labs.overthewire.org -p 2220
+cat /usr/bin/cronjob_bandit24.sh
+logout
+```
+
+> ### Key : 
