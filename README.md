@@ -285,12 +285,16 @@ logout
 
 > ### Key : VxCazJaVykI6W36BkBU0mJTCM8rR95XT
 
+
 ## [Bandit Level 20 -> 21](https://overthewire.org/wargames/bandit/bandit21.html)
 
 ```
 ssh bandit20@bandit.labs.overthewire.org -p 2220
-
+tmux
+nc -Nl localhost 32001 < /etc/bandit_pass/bandit20
+Ctrl+b "
+./suconnect 32001
 logout
 ```
 
-### Key : 
+> ### Key : NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
